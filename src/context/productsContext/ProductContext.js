@@ -10,7 +10,7 @@ export const ProductContextProvider = ({ children }) => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const product = await axios.get("api/v1/products/all-products", {
+      const product = await axios.get("https://madeforme-backend.onrender.com/api/v1/products/all-products", {
         params: {
           category: categoryQuery,
           name: searchQuery

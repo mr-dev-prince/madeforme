@@ -13,7 +13,7 @@ export const WishlistProvider = (props) => {
       if (currUser) {
         try {
           const res = await axios.post(
-            `api/v1/products/likedproducts/${currUser._id}`
+            `https://madeforme-backend.onrender.com/api/v1/products/likedproducts/${currUser._id}`
           );
 
           setWishlist(res.data);

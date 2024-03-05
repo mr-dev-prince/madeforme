@@ -53,7 +53,7 @@ const ProductCard = (props) => {
     console.log(likedData);
 
     try {
-      const res = await axios.post("api/v1/products/addLike", likedData);
+      const res = await axios.post("https://madeforme-backend.onrender.com/api/v1/products/addLike", likedData);
       console.log(res.status);
     } catch (error) {
       console.log(error);

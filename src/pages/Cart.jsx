@@ -13,7 +13,7 @@ const Cart = () => {
 
   const checkoutHandler = async (grandTotal) => {
     try {
-      const { data } = await axios.post("api/v1/payment/checkout", {
+      const { data } = await axios.post("https://madeforme-backend.onrender.com/api/v1/payment/checkout", {
         grandTotal,
       });
 

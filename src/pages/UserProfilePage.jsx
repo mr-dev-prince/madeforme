@@ -18,7 +18,7 @@ const UserProfilePage = () => {
   const logout = async () => {
     try {
       setLoggedOut(true);
-      const response = await axios.get("api/v1/users/logout");
+      const response = await axios.get("https://madeforme-backend.onrender.com/api/v1/users/logout");
       notifySuccess();
       setLoggedOut(false);
       setTimeout(() => {

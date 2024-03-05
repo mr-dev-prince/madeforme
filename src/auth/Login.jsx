@@ -28,7 +28,7 @@ const Login = () => {
     console.log(email, password);
     try {
       setLoggingIn(true);
-      const response = await axios.post("api/v1/users/signin", {
+      const response = await axios.post("https://madeforme-backend.onrender.com/api/v1/users/signin", {
         email,
         password,
       });

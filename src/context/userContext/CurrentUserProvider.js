@@ -11,7 +11,7 @@ export const CurrentUserProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("api/v1/users/currentuser");
+        const response = await axios.get("https://madeforme-backend.onrender.com/api/v1/users/currentuser");
         const userData = response.data;
         console.log(userData);
         setCurrUser(userData);

@@ -15,7 +15,7 @@ const Register = () => {
     e.preventDefault();
     const { username, email, password } = formData;
     try {
-      const response = await axios.post("api/v1/users/signup", {
+      const response = await axios.post("https://madeforme-backend.onrender.com/api/v1/users/signup", {
         username,
         email,
         password,
